@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nandini's Art Gallery</title>
+</head>
+<link rel="stylesheet" href="CSS/style.css">
+<style>
+    /* Reset CSS */
+    body {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: black;
+        margin: 0px;
+        padding: 0px;
+        background: url('img/bg.jpg') no-repeat center center/cover fixed ;
+        width: 100%;
+        height: 100vh;
+        
+        /* (foldername/filename) */
+    }
+
+    /* Giving css to all divs */
+    .left {
+        position: absolute;
+        left: -17px;
+        top: 6px;
+        display: inline-block;
+        font-size: 19px;
+    }
+
+    .mid {
+        /* To get in centre */
+        display: block;
+        width: 38%;
+        margin: 0px auto;
+        font-style: bold;
+    }
+
+    .right {
+        position: absolute;
+        right: 35px;
+        top: 12px;
+        display: inline-block;
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 15px;
+    }
+
+    .navbar li a {
+        color: black;
+        text-decoration: none;
+        font-size: 18px;
+        padding: 43px 13px;
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        color: rgb(43, 38, 77);
+        text-decoration: underline;
+        padding: 45px 15px;
+    }
+
+    .left img {
+        width: 150px;
+    }
+
+    .left div {
+        text-align: center;
+    }
+
+    .btn {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        margin: 0px -0px;
+        background-color: (#fefefe);
+        color: rgb(0, 0, 0);
+        cursor: pointer;
+        border: 2px solid rgb(30, 5, 60);
+        border-radius: 8px;
+        padding: 4px 13px;
+
+    }
+
+    .btn:hover {
+        background-color: rgb(2, 2, 2);
+        color: rgb(255, 255, 255);
+    }
+
+    .btn2 {
+        margin: 273px -166px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        background-color: rgb(0, 0, 0);
+        color: white;
+        cursor: pointer;
+        padding: 7px 18px;
+        width: 530px;
+        align-content: center;
+        font-size: 17px;
+    }
+
+    .btn2:hover {
+        background-color:rgb(151, 151, 151);
+        color: rgb(0, 0, 0);
+    }
+
+    .container {
+    border-radius: 2px;
+    margin: 34px 821px;
+    padding: 35px 200px;
+    width: 0%;
+    display: block;
+    }
+
+    .form-group {
+        text-align: center;
+        display: block;
+        width: 140px;
+        border: 2px;
+        padding: 3px -29px;
+        margin: 4px -45px;
+
+    }
+
+    .form-group input {
+        text-align: center;
+        display: block;
+        width: 450px;
+        border: 2px solid black;
+        font-size: 16px;
+        border-radius: 5px;
+    }
+
+    .H1 {
+        /* you could have done .container h1 */
+        font-size: 50px;
+        margin: -24px -569px;
+    }
+    .container0{
+        margin-bottom: 10px;
+        padding: 0px 0px;
+        font-size: 20px;
+        text-align: center;
+    }
+    .container1{
+        display: flex;
+        justify-content: center;  
+    }
+    .card{
+        height: 250px;
+        width: 195px;
+        margin: 12px 28px;
+        border: 7px hidden white;
+    }
+    
+    #img1{
+        background: url('/img/left.jpg') no-repeat center center/cover;
+    }
+    #img2{
+        background: url('/img/mid.jpg') no-repeat center center/cover;
+    }
+    #img3{
+        background: url('/img/right.jpg') no-repeat center center/cover;
+    }
+    #img5{
+        background: url('/img/mid1.jpeg') no-repeat center center/cover;
+    }
+    #img4{
+        background: url('/img/left1.jpeg')no-repeat center center/cover;
+    }
+    #img6{
+        background: url('/img/right1.jpg') no-repeat center center/cover;
+    }
+    .container2{
+        display: flex;
+        justify-content: center; 
+    }
+</style>
+
+<body>
+    <!-- Creating 3 divs for left, middle and right side in a class
+        left- for logo
+        mid- for navigation bar
+        right- buttons
+        eg; div.left -->
+    <header class="class">
+        <div class="left">
+            <img src="img/logo.png" alt="">
+            <div>N Arts</div>
+
+        </div>
+
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home </a></li>
+                <li><a href="#">About us </a></li>
+                <li><a href="#">Paintings </a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+
+        </div>
+        <div class="right">
+            <!-- button.btn*2   -->
+            <button class="btn">Call us</button>
+            <button class="btn">Email</button>
+        </div>
+    </header>
+    <div class="container">
+        <div class="H1"> <b>ART STUDIO</b></div> 
+        
+    </div>
+    <div class="container0">
+        <p>"Every child is an artist, the problem is staying an artist when you grow up"</p>
+    </div>
+    <!-- <p>"Every child is an artist, the problem is staying an artist when you grow up"</p> -->
+    <div class="container1">
+        
+
+        <div class="card" id="img1">
+            
+        </div>
+        <div class="card" id="img2">
+           
+        </div> 
+        <div class="card" id="img3">
+            
+        </div>
+    </div>
+
+    <div class="container1">
+        
+        <div class="card" id="img4">
+            
+        </div>
+        <div class="card" id="img5">
+            <button class="btn2">Register now</button>
+        </div> 
+        <div class="card" id="img6">
+            
+        </div>
+    </div>
+</body>
+
+</html>
